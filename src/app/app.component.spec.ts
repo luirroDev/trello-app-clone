@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'angular17-dominicode' title`, () => {
+  it(`should have the 'trello-app-clone' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular17-dominicode');
+    expect(app.title).toEqual('trello-app-clone');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular17-dominicode');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, trello-app-clone'
+    );
   });
 });
