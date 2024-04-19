@@ -1,1 +1,82 @@
-<p>login works!</p>
+<div
+  class="w-screen h-screen md:bg-gray-100 bg-[#fafbfc] relative grid place-items-center"
+>
+  <div class="absolute w-full h-full hidden md:block">
+    <img
+      class="absolute w-40 lg:w-80 left-0 bottom-0"
+      src="/assets/svg/login-bg-left.svg"
+      alt="background left"
+    />
+    <img
+      class="absolute w-40 lg:w-80 right-0 bottom-0"
+      src="/assets/svg/login-bg-rigth.svg"
+      alt="background rigth"
+    />
+  </div>
+  <div
+    class="relative w-10/12 flex flex-col items-center bg-[#fafbfc] max-w-[400px] md:px-8 md:py-8 md:rounded md:shadow"
+  >
+    <img
+      class="w-2/3 md:w-2/5"
+      src="/assets/images/logo/logo-gradient-blue-trello.png"
+      alt="logo"
+    />
+    <h5 class="font-semibold text-base pt-4 pb-8">Log in to continue</h5>
+    <form novalidate class="space-y-3 w-full">
+      <input
+        type="text"
+        placeholder="Enter your email"
+        autocomplete="off"
+        class="w-full rounded bg-slate-100 border-gray-300 focus:border-[#2781f8] transition ease-out duration-300"
+      />
+      <input
+        type="password"
+        placeholder="Enter your password"
+        autocomplete="off"
+        class="w-full rounded bg-slate-100 border-gray-300 focus:border-[#2781f8] transition ease-out duration-300"
+      />
+      <button
+        type="submit"
+        class="w-full text-white font-medium rounded bg-[#0c66e4] px-5 py-3 hover:bg-[#0055cc]"
+      >
+        Continue
+      </button>
+    </form>
+    <p class="py-4">
+      <a class="text-[#0c66e4] hover:underline" href="/login">Can't log in?</a>
+      •
+      <a class="text-[#0c66e4] hover:underline" href="/login">
+        Create an account</a
+      >
+    </p>
+    <footer
+      class="pt-24 md:pt-6 border-t border-gray-300 flex flex-col items-center text-xs text-center"
+    >
+      <img
+        src="/assets/images/logo/logo-atlassian-gray.png"
+        alt="atlassian-logo"
+        class="w-1/2"
+      />
+      <p class="pt-2">
+        One account for Trello, Jira, Confluence and
+        <a href="/login" class="text-[#0c66e4] hover:underline">more</a>.
+      </p>
+      <ul class="py-3 flex">
+        <li>Privacy Policy</li>
+        <p class="mx-2">•</p>
+        <li>User Notice</li>
+      </ul>
+      <p>
+        This site is protected by reCAPTCHA and the Google
+        <a href="/login" class="text-[#0c66e4] hover:underline"
+          >Privacy Policy</a
+        >
+        and
+        <a href="/login" class="text-[#0c66e4] hover:underline"
+          >Terms of Service</a
+        >
+        apply.
+      </p>
+    </footer>
+  </div>
+</div>
