@@ -22,7 +22,7 @@
       alt="logo"
     />
     <h5 class="font-semibold text-base pt-4 pb-8">Log in to continue</h5>
-    <form novalidate class="space-y-3 w-full">
+    <form novalidate class="w-full flex flex-col gap-3">
       <input
         type="text"
         placeholder="Enter your email"
@@ -35,12 +35,7 @@
         autocomplete="off"
         class="w-full rounded bg-slate-100 border-gray-300 focus:border-[#2781f8] transition ease-out duration-300"
       />
-      <button
-        type="submit"
-        class="w-full text-white font-medium rounded bg-[#0c66e4] px-5 py-3 hover:bg-[#0055cc]"
-      >
-        Continue
-      </button>
+      <app-btn [typeBtn]="'submit'">Continue</app-btn>
     </form>
     <p class="py-4">
       <a class="text-[#0c66e4] hover:underline" href="/login">Can't log in?</a>
